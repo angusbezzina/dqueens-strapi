@@ -1,11 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "services",
+  "collectionName": "testimonios",
   "info": {
-    "singularName": "service",
-    "pluralName": "services",
-    "displayName": "Servicio",
-    "description": ""
+    "singularName": "testimonio",
+    "pluralName": "testimonios",
+    "displayName": "Testimonio"
   },
   "options": {
     "draftAndPublish": true
@@ -16,53 +15,43 @@
     }
   },
   "attributes": {
-    "title": {
+    "Titulo": {
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
       "type": "string",
-      "required": true,
-      "unique": true
+      "unique": true,
+      "required": true
     },
-    "slug": {
+    "Comentario": {
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "type": "string",
+      "type": "text",
       "required": true,
       "unique": true
     },
-    "featureImage": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
+    "Foto": {
       "allowedTypes": [
         "images"
       ],
+      "type": "media",
+      "multiple": false,
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       }
     },
-    "content": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "richtext",
-      "required": true
-    },
     "categorias": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::categoria.categoria",
-      "mappedBy": "servicio"
+      "inversedBy": "testimonios"
     }
   }
 }

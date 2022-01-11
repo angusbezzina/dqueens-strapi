@@ -4,7 +4,8 @@
   "info": {
     "singularName": "articulo",
     "pluralName": "articulos",
-    "displayName": "articulo"
+    "displayName": "Articulo",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -35,12 +36,13 @@
       "required": true
     },
     "FotoPrincipal": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "videos"
       ],
-      "type": "media",
-      "multiple": false,
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -52,6 +54,16 @@
       "relation": "manyToMany",
       "target": "api::categoria-de-blog.categoria-de-blog",
       "inversedBy": "articulos"
+    },
+    "Slug": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true,
+      "unique": true
     }
   }
 }

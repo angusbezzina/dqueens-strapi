@@ -4,7 +4,8 @@
   "info": {
     "singularName": "servicios-de-belleza",
     "pluralName": "servicios-de-bellezas",
-    "displayName": "Servicios de Belleza"
+    "displayName": "Servicios de Belleza",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -52,18 +53,25 @@
       "type": "richtext"
     },
     "FotoPrincipal": {
-      "allowedTypes": [
-        "images",
-        "videos"
-      ],
       "type": "media",
       "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ],
       "pluginOptions": {
         "i18n": {
-          "localized": true
+          "localized": false
+        }
+      }
+    },
+    "videoURL": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
         }
       },
-      "required": true
+      "type": "string"
     }
   }
 }

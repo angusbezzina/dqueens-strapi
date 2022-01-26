@@ -1,9 +1,9 @@
 {
   "kind": "collectionType",
-  "collectionName": "services",
+  "collectionName": "servicios",
   "info": {
-    "singularName": "service",
-    "pluralName": "services",
+    "singularName": "servicio",
+    "pluralName": "servicios",
     "displayName": "Servicio",
     "description": ""
   },
@@ -16,7 +16,7 @@
     }
   },
   "attributes": {
-    "title": {
+    "titulo": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -33,10 +33,9 @@
         }
       },
       "type": "string",
-      "required": true,
-      "unique": false
+      "required": true
     },
-    "featureImage": {
+    "fotoPrincipal": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -49,7 +48,7 @@
         }
       }
     },
-    "content": {
+    "contenido": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -62,7 +61,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::categoria.categoria",
-      "mappedBy": "servicio"
+      "inversedBy": "servicios"
     },
     "extracto": {
       "pluginOptions": {
@@ -87,7 +86,7 @@
     "precio": {
       "pluginOptions": {
         "i18n": {
-          "localized": true
+          "localized": false
         }
       },
       "type": "string",

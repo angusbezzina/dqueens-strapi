@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- *  horario controller
+ *  servicio controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::horario.horario');
+module.exports = createCoreController('api::servicio.servicio');

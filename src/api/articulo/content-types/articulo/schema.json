@@ -16,17 +16,17 @@
     }
   },
   "attributes": {
-    "Titulo": {
+    "titulo": {
       "pluginOptions": {
         "i18n": {
-          "localized": false
+          "localized": true
         }
       },
       "type": "string",
       "required": true,
-      "unique": false
+      "unique": true
     },
-    "Contenido": {
+    "contenido": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -35,7 +35,7 @@
       "type": "richtext",
       "required": true
     },
-    "FotoPrincipal": {
+    "fotoPrincipal": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -55,7 +55,7 @@
       "target": "api::categoria-de-blog.categoria-de-blog",
       "inversedBy": "articulos"
     },
-    "Slug": {
+    "slug": {
       "pluginOptions": {
         "i18n": {
           "localized": false

@@ -47,16 +47,16 @@
         }
       }
     },
-    "servicio": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::service.service",
-      "inversedBy": "categorias"
-    },
     "testimonios": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::testimonio.testimonio",
+      "mappedBy": "categorias"
+    },
+    "servicios": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::servicio.servicio",
       "mappedBy": "categorias"
     }
   }

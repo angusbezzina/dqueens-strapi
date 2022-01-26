@@ -4,34 +4,97 @@
   "info": {
     "singularName": "informacion-del-contacto",
     "pluralName": "informacion-del-contactos",
-    "displayName": "Informacion del Contacto"
+    "displayName": "Informacion del Contacto",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "numeroDeTelefono": {
       "type": "string",
       "required": true,
-      "unique": true,
-      "minLength": 10
+      "unique": false,
+      "minLength": 10,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
     },
     "correoElectronico": {
       "type": "email",
       "required": true,
-      "unique": true
+      "unique": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
     },
     "numeroDeWhatsApp": {
       "type": "string",
       "required": true,
-      "unique": true,
-      "minLength": 10
+      "unique": false,
+      "minLength": 10,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
     },
     "Direccion": {
       "type": "text",
       "required": true,
-      "unique": true
+      "unique": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "horario": {
+      "type": "text",
+      "required": true,
+      "unique": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "instagram": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string",
+      "unique": false,
+      "required": true
+    },
+    "facebook": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string",
+      "required": true
+    },
+    "twitter": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string",
+      "required": true
     }
   }
 }

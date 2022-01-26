@@ -48,16 +48,6 @@
         }
       }
     },
-    "Direccion": {
-      "type": "text",
-      "required": true,
-      "unique": false,
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      }
-    },
     "horario": {
       "type": "text",
       "required": true,
@@ -94,6 +84,25 @@
         }
       },
       "type": "string",
+      "required": true
+    },
+    "enlaceDeDireccion": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string",
+      "default": "(Usar el enlace de Google)",
+      "required": true
+    },
+    "direccion": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "richtext",
       "required": true
     }
   }

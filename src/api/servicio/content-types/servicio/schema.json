@@ -91,6 +91,11 @@
       },
       "type": "string",
       "required": true
+    },
+    "testimonios": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::testimonio.testimonio"
     }
   }
 }

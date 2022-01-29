@@ -16,7 +16,7 @@
     }
   },
   "attributes": {
-    "Titulo": {
+    "titulo": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -26,7 +26,7 @@
       "required": true,
       "unique": true
     },
-    "Contenido": {
+    "contenido": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -34,7 +34,7 @@
       },
       "type": "richtext"
     },
-    "FotoPrincipal": {
+    "fotoPrincipal": {
       "type": "media",
       "multiple": false,
       "required": false,

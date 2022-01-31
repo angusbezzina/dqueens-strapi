@@ -52,25 +52,14 @@
       },
       "type": "richtext"
     },
-    "fotoPrincipal": {
+    "mediaPrincipal": {
       "type": "media",
       "multiple": false,
       "required": true,
       "allowedTypes": [
-        "images"
-      ],
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      }
-    },
-    "videoPrincipal": {
-      "allowedTypes": [
+        "images",
         "videos"
       ],
-      "type": "media",
-      "multiple": false,
       "pluginOptions": {
         "i18n": {
           "localized": false

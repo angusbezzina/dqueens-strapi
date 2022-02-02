@@ -84,7 +84,7 @@
         }
       },
       "type": "string",
-      "required": true
+      "required": false
     },
     "enlaceDeDireccion": {
       "pluginOptions": {

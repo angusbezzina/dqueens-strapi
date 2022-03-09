@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "categoria_de_blogs",
+  "collectionName": "articulo_categorias",
   "info": {
-    "singularName": "categoria-de-blog",
-    "pluralName": "categoria-de-blogs",
-    "displayName": "Categoría de Blog",
+    "singularName": "articulo-categoria",
+    "pluralName": "articulo-categorias",
+    "displayName": "Categoría de Articulo",
     "description": ""
   },
   "options": {
@@ -30,17 +30,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::articulo.articulo",
-      "mappedBy": "categoria_de_blogs"
-    },
-    "slug": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      },
-      "type": "string",
-      "required": true,
-      "unique": false
+      "inversedBy": "categoria_de_articulos"
     }
   }
 }

@@ -49,12 +49,6 @@
         }
       }
     },
-    "categoria_de_blogs": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::categoria-de-blog.categoria-de-blog",
-      "inversedBy": "articulos"
-    },
     "slug": {
       "pluginOptions": {
         "i18n": {
@@ -64,6 +58,12 @@
       "type": "string",
       "required": true,
       "unique": true
+    },
+    "categoria_de_articulos": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::articulo-categoria.articulo-categoria",
+      "inversedBy": "articulos"
     }
   }
 }
